@@ -12,6 +12,24 @@ const nextConfig = {
 
     return webpackConfig
   },
+
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '10mb', // <--- Aquí subimos el límite a 10 Megabytes
+    },
+  },
+
+  // 1. Agregamos permiso para cargar imágenes de localhost
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '3000',
+        pathname: '/api/media/**',
+      },
+    ],
+  },
 }
 
 export default withPayload(nextConfig, { devBundleServerPackages: false })

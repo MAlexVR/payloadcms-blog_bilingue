@@ -1,4 +1,4 @@
-# Informe Técnico: Desarrollo de Blog Bilingüe con Payload CMS 3.69.0 y Next.js 15
+# Blog Bilingüe con Payload CMS 3.69.0 y Next.js 15
 
 **Proyecto:** Payload CMS - Blog Bilingüe
 **Versión de Payload:** 3.69.0
@@ -858,7 +858,7 @@ export default async function Post({
 
 ## Resumen
 
-Este informe documenta la implementación completa de un blog bilingüe utilizando:
+Implementación completa de un blog bilingüe utilizando:
 
 - **Payload CMS 3.0** como sistema de gestión de contenidos headless
 - **Next.js 15** con App Router para el frontend
